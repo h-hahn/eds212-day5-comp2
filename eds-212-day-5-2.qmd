@@ -1,0 +1,51 @@
+---
+title: "eds-212-day-5-2"
+format: html
+editor: visual
+---
+
+```{r}
+library(tidyverse)
+```
+
+## Some logical operators
+
+-   == (does this match?)
+
+-   != (do these NOT match?)
+
+-   \>, \<, \>=, \<=
+
+-   &, \|
+
+```{r}
+# does 4 = 5?
+4 == 5
+
+# does 4 = 4?
+4 == 4
+
+# does 4 not equal 5?
+4 != 5
+
+# with assigned variables
+cat <- 10
+dog <- 7
+
+cat > dog 
+
+# dog greater than cat, OR is cat less than 20
+dog > cat | cat < 20
+
+# dog greater than cat, AND is cat = 10
+dog > cat & cat == 10
+
+
+```
+
+```{r}
+ggplot(mtcars, aes(x = wt, y = mpg)) +
+  geom_point(color = "lightblue3") +
+  theme_light() +
+  labs(title = "CARS", x = "Weight (1000 lbs)", y = "Miles per Gallon")
+```
